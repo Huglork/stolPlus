@@ -1,0 +1,28 @@
+.content{
+    height: 15vh;
+    position: relative;
+    z-index: 1;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    background: #9DC82C;
+    padding: 20px 15px;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list a{
+    color: rgba(255, 255, 255, 0.65);
+    transition: all 0.5s;
+}
+.nav__list a:hover{
+    color: #fff;
+}
+.nav__list:last-child{
+    margin-left: 50px;
+}

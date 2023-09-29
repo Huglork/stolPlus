@@ -1,0 +1,20 @@
+.terms{
+    padding: 20px 0 50px 0;
+    height: 100%;
+    background: var(--section-bg);
+}
+.terms__title, .terms__subtitle{
+    text-transform: uppercase;
+}
+.terms__title{
+    font-size: 36px;
+}
+.terms__subtitle{
+    font-size: 24px;
+}
+.terms__inner{
+    text-align: left;
+}
+.terms__inner p{
+    font-size: 18px;
+}

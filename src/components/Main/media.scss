@@ -1,0 +1,39 @@
+@media (max-width: 992px) {
+  .main__title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .main__inner {
+    text-align: center;
+    flex-direction: column;
+  }
+  .main__title, .main__desc {
+    text-align: center;
+  }
+}
+//@media (max-width: 768px)
+@media (max-width: 768px) {
+  .about{
+    padding: 50px 0 35px 0;
+  }
+  .about__title{
+    font-size: 20px;
+  }
+  .about__desc{
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 768px){
+  .main__inner{
+    height: 50vh;
+  }
+  .main__img img{
+    display: none;
+  }
+  .categories{
+    padding: 60px 0;
+  }
+}

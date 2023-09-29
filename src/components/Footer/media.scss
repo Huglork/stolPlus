@@ -1,0 +1,25 @@
+@media (max-width: 700px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+  .footer__info {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer__info{
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px){
+  .footer__links{
+    flex-direction: column;
+    margin: auto;
+  }
+  .footer__links-list{
+    padding: 0;
+
+  }
+}

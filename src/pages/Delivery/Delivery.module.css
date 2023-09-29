@@ -1,0 +1,22 @@
+.addressSearchContainer{
+    max-width: 500px;
+    position: fixed;
+    top: 15.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+}
+.modeToggle{
+    background: #fff;
+    border: 2px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.makeOrder{
+    transition: all 0.5s;
+}
+.makeOrder:active{
+    background: #799f0d;
+}

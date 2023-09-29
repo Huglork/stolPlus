@@ -1,0 +1,80 @@
+.armchairs{
+    padding-top: 30px;
+    background: #F9F9F9;
+}
+.armchairs__title{
+    font-size: 40px;
+    text-align: center;
+}
+.armchairs__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    background: #F9F9F9;
+}
+
+.armchair__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.armchair__card .armchair__info {
+    margin-bottom: 50px;
+    align-self: center;
+}
+.armchairs__list{
+    padding: 0;
+}
+.armchair__item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+.armchair__img {
+    flex-basis: 270px;
+    width: 260px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 10px 5px 0 5px;
+    transition: all 1s;
+    position: relative;
+}
+
+.armchair__img:hover {
+    opacity: 0.3;
+}
+
+.armchair__img img {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 175px;
+
+}
+
+.armchair__info {
+    text-align: left;
+}
+
+.armchair__title {
+    font-size: 18px;
+    line-height: 0.5;
+    margin-bottom: 7px;
+}
+
+.armchair__color {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.armchair__price {
+    font-size: 20px;
+}
