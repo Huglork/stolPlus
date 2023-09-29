@@ -3,6 +3,7 @@ import {ChairsList} from "./pages/ChairsList/ChairsList";
 import {Route, Routes} from "react-router";
 import {Chair} from "./pages/Chair/Chair";
 import './App.css';
+
 import {Header} from "./components/Header/Header";
 import {TablesList} from "./pages/TablesList/TablesList";
 import {Table} from "./pages/Table/Table";

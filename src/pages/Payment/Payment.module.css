@@ -1,5 +1,5 @@
 .payment{
-    height: 100vh;
+    height: 100%;
     background: var(--section-bg);
     padding: 20px 0 50px 0;
 }
@@ -11,14 +11,29 @@
     max-width: 700px;
 }
 .payment__title{
-    font-size: 28px;
+    font-size: 34px;
 }
 .payment__subtitle{
     font-size: 20px;
 }
 .payment__list{
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     align-items: center;
     gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .payment__inner p{
+        font-size: 16px;
+    }
+}
+@media(max-width: 576px){
+    .payment__title{
+        font-size: 28px;
+    }
+    .payment__inner p{
+        font-size: 14px;
+    }
 }

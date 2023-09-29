@@ -47,3 +47,32 @@
     font-size: 16px;
     font-weight: 500;
 }
+
+@media (max-width: 800px) {
+    .guaranties__top{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 768px){
+    .guaranties__topTitle{
+        font-size: 34px;
+    }
+    .guaranties__topSubtitle{
+        font-size: 18px;
+    }
+    .guaranties__listItem{
+        display: block;
+    }
+    .guaranties__itemTitle{
+        font-size: 30px;
+    }
+
+}
+@media (max-width: 576px) {
+    .guaranties__itemTitle{
+        font-size: 20px;
+    }
+    .guaranties__itemDesc{
+        font-size: 14px;
+    }
+}

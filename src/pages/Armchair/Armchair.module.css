@@ -1,15 +1,14 @@
-.back-btn{
-    margin-left: 30px;
+.backBtn{
     padding: 10px 15px 10px 15px;
     text-align: center;
     background: var(--btn-color);
     border-radius: 8px;
     transition: all 0.5s;
 }
-.back-btn:hover{
+.backBtn:hover{
     background: #739d0c;
 }
-.back-btn img{
+.backBtn img{
     margin-left: 10px;
 }
 .item {
@@ -52,12 +51,40 @@
     height: 230px;
 
 }
-
-.ant-btn {
-    background: var(--btn-color);
-    transition: all 0.5s;
+.item__infoBtns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
 }
-.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
-    background: #739d0c;
+
+@media (max-width: 992px){
+    .item__info {
+        max-width: 550px;
+    }
+    .item__desc{
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px){
+    .item{
+        height: 100%;
+    }
+    .item__info {
+        max-width: 400px;
+    }
+}
+@media (max-width: 660px) {
+    .item__infoBtns{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 576px) {
+    .item__wrapper{
+        flex-direction: column;
+    }
+    .item__desc{
+        font-size: 14px;
+    }
 }

@@ -3,6 +3,14 @@
     --card-bg: #cbcbcb;
     --btn-color: #a6e017;
 }
+.ant-btn {
+    background: var(--btn-color);
+    transition: all 0.5s;
+
+}
+.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+    background: #739d0c;
+}
 
 .App {
     text-align: center;

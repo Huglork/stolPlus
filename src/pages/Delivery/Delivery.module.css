@@ -20,3 +20,9 @@
 .makeOrder:active{
     background: #799f0d;
 }
+@media (max-width: 768px){
+    .addressSearchContainer{
+        flex-direction: column;
+    }
+}
+

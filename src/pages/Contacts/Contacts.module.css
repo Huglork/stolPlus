@@ -1,31 +1,47 @@
-.contacts{
+.contacts {
     padding-top: 1px;
     height: 100vh;
     background: var(--section-bg);
 }
-.inner{
+
+.inner {
     display: flex;
     gap: 30px;
     align-items: center;
 }
-.title{
+
+.title {
     margin-bottom: 60px;
     font-size: 40px;
 }
-.inner img{
+
+.inner img {
     width: 50%;
     height: 100%;
 }
-.adressList{
+
+.adressList {
     font-size: 20px;
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.street, .phone{
+
+.street, .phone {
     font-weight: 700;
 }
-.city{
+
+.city {
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        flex-direction: column;
+    }
+
+    .inner img{
+        width: 100%;
+    }
 }
