@@ -8,38 +8,47 @@ import CatalogList from "../CatalogList/CatalogList";
 export const Header = () => {
     return (
         <div className='content'>
-            <header className="header">
-                <div className="container">
-                    <nav className="nav">
-                        <ul className="nav__list">
-                            <li className="logo">
-                                <Link to={'/'}><img src={Logo} alt="logo"/></Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link to={"/catalog"}><CatalogList/></Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link to={"/delivery"}>Доставка</Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link to={"/payment"}>Способ оплаты</Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link to={"/contacts"}>Контакты</Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link to={"/guaranties"}>Гарантии и возврат</Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link to={"/terms"}>Политика конфиденциальности</Link>
-                            </li>
+           <header className="header">
+               <div className="container">
+                   <nav className="nav">
+                       <input type="checkbox" id="nav-check"></input>
+                       <div className="nav-header">
+                           <Link to={"/"}><img src={Logo} alt=""/></Link>
+                       </div>
+                       <div className="nav-btn">
+                           <label htmlFor="nav-check">
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                           </label>
+                       </div>
 
-                            <li><img src={basket} alt=""/></li>
-                        </ul>
-                    </nav>
-                </div>
+                       <ul className="nav-list">
+                           <li className="nav__item">
+                               <Link to={"/catalog"}><CatalogList/></Link>
+                           </li>
+                           <li className="nav__item">
+                               <Link to={"/delivery"}>Доставка</Link>
+                           </li>
+                           <li className="nav__item">
+                               <Link to={"/payment"}>Способ оплаты</Link>
+                           </li>
+                           <li className="nav__item">
+                               <Link to={"/contacts"}>Контакты</Link>
+                           </li>
+                           <li className="nav__item">
+                               <Link to={"/guaranties"}>Гарантии и возврат</Link>
+                           </li>
+                           <li className="nav__item">
+                               <Link to={"/terms"}>Политика конфиденциальности</Link>
+                           </li>
+                           <li className="nav__item"> <img src={basket} alt="basket"/></li>
+                       </ul>
 
-            </header>
+                   </nav>
+               </div>
+
+           </header>
 
         </div>
 

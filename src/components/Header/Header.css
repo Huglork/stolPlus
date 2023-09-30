@@ -1,28 +1,112 @@
-.content{
+.content {
     height: 15vh;
     position: relative;
     z-index: 1;
 }
 
-.header{
+.header {
     position: fixed;
     width: 100%;
     background: #9DC82C;
-    padding: 20px 15px;
+    padding: 25px 15px;
 }
 
-.nav__list{
+.nav {
+    width: 100%;
+    background: #9DC82C;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav__list a{
-    color: rgba(255, 255, 255, 0.65);
-    transition: all 0.5s;
+
+.nav > .nav-header {
+    padding-left: 1rem;
 }
-.nav__list a:hover{
+
+.nav > .nav-header > .nav-title {
+    font-size: 22px;
     color: #fff;
 }
-.nav__list:last-child{
-    margin-left: 50px;
+
+.nav > .nav-list {
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav > .nav-list > li {
+    list-style-type: none;
+}
+
+.nav > .nav-list > li a {
+    text-decoration: none;
+    color: #efefef;
+    cursor: pointer;
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        padding: 1rem;
+    }
+
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        padding-top: 0.2rem;
+    }
+
+    .nav > .nav-btn > label {
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav > .nav-list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: #9DC82C;
+        height: 0;
+        transition: all 0.3s ease-in;
+        top: 60px;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .nav > .nav-list > li {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .nav > #nav-check:checked ~ .nav-list {
+        height: calc(100vh - 50px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav  .nav-list {
+        gap: 1rem;
+    }
+
+    .nav__item a {
+        font-size: 14px;
+    }
 }
